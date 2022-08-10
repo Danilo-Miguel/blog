@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+         <html>
+            <head>
+                <title> Contatos </title>
+            </head>
+            <body>
+                <a href="https://www.oceanbrasil.com/" target="_blank"> Click para ir a oceanbrasil</a>
+                   
+                    {% if usuario[2] == "Professor" %}
+                        <h2>Bem vindo Professor {{usuario[1]}}</h2> 
+                    {%else%}
+                        <h2>Bem vindo Aluno</h2>
+                    {%endif%}
+
+                    {% for aluno in alunos %}
+                    <h3>{{aluno}}</h3>
+                    {%endfor%}
+
+                <h1>{{nome}} </h1>
+                <h1>Danilo de Souza Miguel</h1>
+                <h2>danilo@email.com</h2>
+                <h3> 11985748-65243 </h3>
+            </body>   
+         </html>
+    
